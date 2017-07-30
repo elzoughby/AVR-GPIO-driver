@@ -9,7 +9,6 @@
 #define GPIO_H_
 
 
-#include "types.h"
 #include "hw_gpio.h"
 #include "hw_types.h"
 

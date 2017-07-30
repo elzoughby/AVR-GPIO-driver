@@ -5,7 +5,7 @@
 * Purpose: Show how to use the GPIO driver in the applications         *
 ***********************************************************************/
 
-#include "gpio.h"
+#include "GPIO/gpio.h"
 
 
 int main(void) {
