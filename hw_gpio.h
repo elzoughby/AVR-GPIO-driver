@@ -1,9 +1,9 @@
-	/***********************************************************************
-    * Register Abstraction for AVR Microcontrollers GPIO Driver			   *
-    * @author Ahmed Elzoughby											   *
-    * @date July 26, 2017												   *
-    * Purpose: Provide an easy interface to deal with digital I/O devices  *
-    ***********************************************************************/
+/***********************************************************************
+* Register Abstraction for AVR Microcontrollers GPIO Driver			   *
+* @author Ahmed Elzoughby											   *
+* @date July 26, 2017												   *
+* Purpose: Provide an easy interface to deal with digital I/O devices  *
+***********************************************************************/
 
 #ifndef HW_GPIO_H_
 #define HW_GPIO_H_

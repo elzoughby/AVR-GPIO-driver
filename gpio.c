@@ -1,9 +1,9 @@
-	/***********************************************************************
-    * Hardware Abstraction for AVR Microcontrollers GPIO Driver			   *
-    * @author Ahmed Elzoughby											   *
-    * @date July 26, 2017												   *
-    * Purpose: Providie an easy interface to deal with digital I/O devices  *
-    ***********************************************************************/
+/***********************************************************************
+* Hardware Abstraction for AVR Microcontrollers GPIO Driver			   *
+* @author Ahmed Elzoughby											   *
+* @date July 26, 2017												   *
+* Purpose: Providie an easy interface to deal with digital I/O devices *
+***********************************************************************/
 
 #include "gpio.h"
 
