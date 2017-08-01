@@ -13,12 +13,12 @@ typedef unsigned char uint8_t;
 typedef unsigned short uint16_t;
 
 typedef enum bit {
-	HIGH = 1,
 	LOW = 0,
-	ONE = 1,
+	HIGH = 1,
 	ZERO = 0,
-	ON = 1,
-	OFF = 0
+	ONE = 1,
+	OFF = 0,
+	ON = 1
 } bit_t;
 
 
