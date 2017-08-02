@@ -12,20 +12,23 @@
 #include "types.h"
 
 
+#define REG_ADDR (*((volatile uint8_t*) reg_addr))
+
+
 static inline void hw_bit_write(uint8_t reg_addr, uint8_t bit_num, bit_t val) {
-	*((volatile uint8_t*) reg_addr) = val? *((volatile uint8_t*) reg_addr) | (1 << bit_num) : *((volatile uint8_t*) reg_addr) & (~(1 << bit_num));
+	REG_ADDR = val? REG_ADDR | (1 << bit_num) : REG_ADDR & (~(1 << bit_num));
 }
 
 static inline bit_t hw_bit_read(uint8_t reg_addr, uint8_t bit_num) {
-	return (*((volatile uint8_t*) reg_addr) & (1 << bit_num))? HIGH: LOW;
+	return (REG_ADDR & (1 << bit_num))? HIGH: LOW;
 }
 
 static inline void hw_reg8_write(uint8_t reg_addr, uint8_t val) {
-	*((volatile uint8_t*) reg_addr) = val;
+	REG_ADDR = val;
 }
 
 static inline uint8_t hw_reg8_read(uint8_t reg_addr) {
-	return *((volatile uint8_t*) reg_addr);
+	return REG_ADDR;
 }
 
 

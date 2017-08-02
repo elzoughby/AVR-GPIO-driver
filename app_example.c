@@ -6,6 +6,7 @@
 ***********************************************************************/
 
 #include "led.h"
+#include "switch.h"
 
 
 int main(void) {
@@ -14,8 +15,21 @@ int main(void) {
 	test_led.base_addr = BASE_B;
 	test_led.pin_num = 0;
 	test_led.wiring = CURRENT_SOURCING;
-	
-	led_set_state(&test_led, ON);
+	led_init(&test_led);
+	switch_t test_switch;
+	test_switch.base_addr = BASE_B;
+	test_switch.pin_num = 1;
+	test_switch.wiring_state = WIRING_PULLUP;
+	switch_init(&test_switch);
 
-	return 0;
+	while(1) {
+		bit_t switch_pin;
+		switch_get_state(&test_switch, &switch_pin);
+		while(switch_pin == ON) {
+			led_set_state(&test_led, ON);
+			switch_get_state(&test_switch, &switch_pin);
+		}
+		led_set_state(&test_led, OFF);
+	}
+
 }
