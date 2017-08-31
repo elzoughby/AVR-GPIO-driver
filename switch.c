@@ -1,7 +1,7 @@
 /***********************************************************************
 * GPIO switch ECUAL layer                                              *
-* @author Ahmed Elzoughby											   *
-* @date July 30, 2017												   *
+* @author Ahmed Elzoughby                                              *
+* @date July 30, 2017                                                  *
 * Purpose: Show how to use the GPIO driver in a simple switch driver   *
 ***********************************************************************/
 

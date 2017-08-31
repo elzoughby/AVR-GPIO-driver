@@ -1,7 +1,7 @@
 /***********************************************************************
-* Custom types for AVR Microcontrollers GPIO Driver					   *
-* @author Ahmed Elzoughby											   *
-* @date July 26, 2017												   *
+* Custom types for AVR Microcontrollers GPIO Driver                    *
+* @author Ahmed Elzoughby                                              *
+* @date July 26, 2017                                                  *
 * Purpose: Provide an easy interface to deal with digital I/O devices  *
 ***********************************************************************/
 
@@ -9,8 +9,8 @@
 #define TYPES_H_
 
 
-typedef unsigned char uint8_t;
-typedef unsigned short uint16_t;
+#include <stdint.h>
+
 
 typedef enum bit {
 	LOW = 0,
